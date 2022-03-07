@@ -1,6 +1,6 @@
 #' andy colour pallete
 #' Adjusted from the The Color Universal Design from the University of Tokyo using black palatte
-andy_colours <- c("#009E73","#E69F00", "#0072B2", "#cc79a7", "#56B4E9", "#F0E442", "#8e9fbc", "#d55e00", "#a6192e")
+andy_colours <- c("#0072B2","#E69F00","#009E73", "#cc79a7", "#56B4E9", "#F0E442", "#8e9fbc", "#d55e00", "#a6192e")
 
 andy_teal <- "#009E73"
 andy_yellow <- "#E69F00"
@@ -84,56 +84,56 @@ andy_pal <- function(n = 0, reverse = FALSE, faded = FALSE) {
 regular_palette <- function(n) {
   
   if (n == 1) {
-    palette <- andy_teal
+    palette <- andy_blue
   } else if (n == "2a") {
-    palette <- c(andy_teal,
-                 andy_blue)
+    palette <- c(andy_blue,
+                 andy_red)
   } else if (n == 2) {
-    palette <- c(andy_teal,
+    palette <- c(andy_blue,
                  andy_yellow)
   } else if (n == 3) {
-    palette <- c(andy_teal,
+    palette <- c(andy_blue,
                  andy_yellow,
-                 andy_blue)
+                 andy_teal)
   } else if (n == 4) {
-    palette <- c(andy_teal,
+    palette <- c(andy_blue,
                  andy_yellow,
-                 andy_blue,
+                 andy_teal,
                  andy_pink)
   } else if (n == 5) {
-    palette <- c(andy_teal,
-    andy_yellow,
-    andy_blue,
+    palette <- c(andy_blue,
+                 andy_yellow,
+                 andy_teal,
     andy_pink,
     andy_lightblue)
   } else if (n == 6) {
-    palette <- c(andy_teal,
-    andy_yellow,
-    andy_blue,
+    palette <- c(andy_blue,
+                 andy_yellow,
+                 andy_teal,
     andy_pink,
     andy_lightblue,
     andy_lightyellow)
   } else if (n == 7) {
-    palette <- c(andy_teal,
-    andy_yellow,
-    andy_blue,
+    palette <- c(andy_blue,
+                 andy_yellow,
+                 andy_teal,
     andy_pink,
     andy_lightblue,
     andy_lightyellow,
     andy_coolgrey)
   } else if (n == 8) {
-    palette <- c(andy_teal,
-    andy_yellow,
-    andy_blue,
+    palette <- c(andy_blue,
+                 andy_yellow,
+                 andy_teal,
     andy_pink,
     andy_lightblue,
     andy_lightyellow,
     andy_coolgrey,
     andy_orange)
   } else if (n == 9) {
-    palette <- c(andy_teal,
-    andy_yellow,
-    andy_blue,
+    palette <- c(andy_blue,
+                 andy_yellow,
+                 andy_teal,
     andy_pink,
     andy_lightblue,
     andy_lightyellow,
