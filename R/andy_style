@@ -2,7 +2,7 @@
 #' This function allows you to add the Ai Group theme to your ggplot graphics.
 
 # function
-aig_style <- function() {
+andy_style <- function() {
   font <- "Lato"
   
   ggplot2::theme(
