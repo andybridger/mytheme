@@ -139,7 +139,7 @@ regular_palette <- function(n) {
     andy_lightyellow,
     andy_coolgrey,
     andy_orange,
-    andy_red
+    andy_red)
   } 
   palette
 }
