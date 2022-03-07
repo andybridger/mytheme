@@ -33,8 +33,8 @@ andy_red <- "#a6192e"
 #'
 #' p <- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
 #'     geom_point() +
-#'     theme_grattan() +
-#'     scale_colour_manual(values = grattan_pal(n = 3))
+#'     aig_style() +
+#'     scale_colour_manual(values = andy_pal(n = 3))
 #'
 #' p
 #'
@@ -183,10 +183,10 @@ regular_palette <- function(n) {
 #'
 #' ggplot(data = mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
 #'    geom_point() +
-#'    aig_colour_manual(n = 3) +
-#'    aig_style()
+#'    andy_colour_manual(n = 3) +
+#'    andy_style()
 #'
-#' @name aig_colours
+#' @name andy_colours
 #' @aliases NULL
 NULL
 
@@ -203,7 +203,7 @@ andy_colour_manual <- function(n = 0,
   if (discrete) {
     return(
       ggplot2::scale_colour_manual(...,
-                                   values = aig_pal(n = n,
+                                   values = andy_pal(n = n,
                                             reverse = reverse,
                                             faded = faded))
     )
@@ -226,7 +226,7 @@ andy_fill_manual <- function(n = 0, reverse = FALSE,
   if (discrete) {
     return(
       ggplot2::scale_fill_manual(...,
-                                 values = aig_pal(n = n,
+                                 values = andy_pal(n = n,
                                                       reverse = reverse,
                                                       faded = faded))
     )
