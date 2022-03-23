@@ -33,7 +33,7 @@ andy_red <- "#a6192e"
 #'
 #' p <- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
 #'     geom_point() +
-#'     aig_style() +
+#'     andy_style() +
 #'     scale_colour_manual(values = andy_pal(n = 3))
 #'
 #' p
@@ -43,8 +43,8 @@ andy_red <- "#a6192e"
 #'
 #' p <- ggplot(mtcars, aes(x = wt, y = mpg, col = factor(cyl))) +
 #'     geom_point() +
-#'     aig_style() +
-#'     aig_colour_manual(n = 3)
+#'     andy_style() +
+#'     andy_colour_manual(n = 3)
 #'
 #' p
 #'
@@ -54,7 +54,7 @@ andy_pal <- function(n = 0, reverse = FALSE, faded = FALSE) {
   
   if (n == 0) {
     n <- 5
-    "Your chart will probably look better if you specify n in aig_pal()."
+    "Your chart will probably look better if you specify n in andy_pal()."
   }
   
   if (n > 6 & n <= 9) {
@@ -63,7 +63,7 @@ andy_pal <- function(n = 0, reverse = FALSE, faded = FALSE) {
   
   if (n > 9 & n != "2a") {
     stop(paste0("You've requested ", n,
-                " colours; aig_pal() only supports up to 9."))
+                " colours; andy_pal() only supports up to 9."))
   }
   
   if(isFALSE(faded)) {
