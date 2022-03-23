@@ -66,7 +66,7 @@ NULL
 #' @rdname andy_axes
 #' @export
 
-andy_y_continuous <- function(expand_bottom = 0, expand_top = 0.07, ...) {
+andy_y_continuous <- function(expand_bottom = 0, expand_top = 0.15, ...) {
   scale_y_continuous(expand = ggplot2::expansion(mult = c(expand_bottom,
                                                           expand_top)),
                      ...)
@@ -77,12 +77,12 @@ andy_y_continuous <- function(expand_bottom = 0, expand_top = 0.07, ...) {
 #' @export
 
 scale_y_continuous_andy <- function(expand_bottom = 0,
-                                       expand_top = 0.07,
-                                       ...) {
+                                    expand_top = 0.15,
+                                    ...) {
   
   andy_y_continuous(expand_bottom = expand_bottom,
-                       expand_top = expand_top,
-                       ...)
+                    expand_top = expand_top,
+                    ...)
 }
 
 #' @rdname andy_axes
@@ -90,8 +90,8 @@ scale_y_continuous_andy <- function(expand_bottom = 0,
 #' @export
 
 andy_x_continuous <- function(expand_left = 0,
-                                 expand_right = 0.07,
-                                 ...) {
+                              expand_right = 0.07,
+                              ...) {
   
   scale_x_continuous(expand = ggplot2::expansion(mult = c(expand_left,
                                                           expand_right)),
@@ -103,10 +103,10 @@ andy_x_continuous <- function(expand_left = 0,
 #' @export
 
 scale_x_continuous_andy <- function(expand_left = 0,
-                                       expand_right = 0.07,
-                                       ...) {
+                                    expand_right = 0.07,
+                                    ...) {
   
   andy_x_continuous(expand_left = expand_left,
-                       expand_right = expand_right,
-                       ...)
+                    expand_right = expand_right,
+                    ...)
 }
