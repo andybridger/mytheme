@@ -15,17 +15,15 @@ left_align <- function(plot_name, pieces){
 }
 
 finalise_plot <- function(plot_name,
-                          source_name,
                           save_filepath=file.path(Sys.getenv("TMPDIR"), "tmp-nc.png"),
                           width_pixels=640,
-                          height_pixels=450,
-                          logo_image_path = file.path(system.file("data", package = 'bbplot'),"placeholder.png")) {
-                          
+                          height_pixels=450) {
+  
   #Draw your left-aligned grid
   plot_left_aligned <- left_align(plot_name, c("subtitle", "title", "caption"))
   plot_grid <- ggpubr::ggarrange(plot_left_aligned,
                                  ncol = 1, nrow = 1,
-                                 heights = c(1, ))
+                                 heights = 1)
   ## print(paste("Saving to", save_filepath))
   save_plot(plot_grid, width_pixels, height_pixels, save_filepath)
   ## Return (invisibly) a copy of the graph. Can be assigned to a
