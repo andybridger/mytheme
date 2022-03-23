@@ -1,5 +1,5 @@
 #' Add my theme to ggplot chart - the code is based bbplot from the BBC
-#' This function allows you to add the Ai Group theme to your ggplot graphics.
+#' This function allows you to add the my theme to your ggplot graphics.
 
 # function
 andy_style <- function() {
@@ -17,9 +17,9 @@ andy_style <- function() {
                                           size=16,
                                           margin=ggplot2::margin(3,0,3,0)),
     plot.caption = ggplot2::element_text(family=font,
-                                          size=10,
-                                          hjust = 0.0
-                                          ),
+                                         size=10,
+                                         hjust = 0.0
+    ),
     #This leaves the caption text element empty, because it is set elsewhere in the finalise plot function
     
     #Legend format
@@ -37,7 +37,7 @@ andy_style <- function() {
     axis.line.y = ggplot2::element_blank(),
     axis.line.x.bottom = ggplot2::element_line(color="#000000",size = 0.5, linetype = 1),
     axis.ticks.x.bottom = ggplot2::element_line(color="#000000",size = 0.5),
-      
+    
     #Grid lines
     #This removes all minor gridlines and adds major y gridlines. In many cases you will want to change this to remove y gridlines and add x gridlines. The cookbook shows you examples for doing so
     panel.grid.minor = ggplot2::element_blank(),
