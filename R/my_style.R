@@ -86,3 +86,9 @@ finalise_plot <- function(plot_name,
   ## variable or silently ignored.
   invisible(plot_grid)
 }
+
+my_y_continuous <- function(expand_bottom = 0, expand_top = 0.15, ...) {
+  scale_y_continuous(expand = ggplot2::expansion(mult = c(expand_bottom,
+                                                          expand_top)),
+                     ...)
+}
