@@ -3,4 +3,7 @@
 export(my_style)
 export(finalise_plot)
 export(my_y_continuous)
+export(my_x_continuous)
+export(scale_x_continuous_my)
+export(scale_y_continuous_my)
 import(ggplot2)
