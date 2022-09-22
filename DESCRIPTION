@@ -1,4 +1,4 @@
-Package: andytheme
+Package: mytheme
 Title: MAKING GGPLOT GRAPHICS SIMILAR TO BBC NEWS STYLE
 Version: 0.2
 Authors@R: person("Andrew", "Bridger", , "andrewjohnbridger@gmail.com", c("aut", "cre"))
